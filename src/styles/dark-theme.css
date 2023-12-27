@@ -1,0 +1,36 @@
+:root {
+    --accent: #0070ff; 
+    --accent-dark: #0050bb; 
+    --black: 18, 18, 18; 
+    --gray: 80, 80, 80; 
+    --gray-light: 40, 40, 40;
+    --gray-dark: 208, 208, 208; 
+    --gray-gradient: rgba(40, 40, 40, 50%), #121212;
+    --box-shadow: 0 2px 6px rgba(80, 80, 80, 25%), 0 8px 24px rgba(80, 80, 80, 33%);
+}
+
+body {
+    background: linear-gradient(var(--gray-gradient)) no-repeat;
+    color: rgb(var(--gray-dark));
+    /* ... other styles ... */
+}
+
+code {
+    background-color: rgb(var(--gray-light));
+    color: #d0d0d0;
+}
+
+pre > code {
+    all: unset;
+    color: #d0d0d0; /* Ensure code inside 'pre' is also light-colored */
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    color: var(--accent-dark);
+}
+
+/* Additional elements like headings, paragraphs, etc., can inherit the color or be adjusted as needed */
